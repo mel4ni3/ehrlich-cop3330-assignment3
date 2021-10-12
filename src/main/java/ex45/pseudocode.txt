@@ -1,0 +1,11 @@
+App
+    main
+        initialize fileContent string to read from path of input file
+        replace all instances of utilize with use in fileContent
+
+        initialize Scanner input
+        prompt for name of the output file
+        initialize fileWriter outfile to a new txt file in the package directory
+        initialize string name to next line of input
+        write fileContent to outFile
+        close outFile

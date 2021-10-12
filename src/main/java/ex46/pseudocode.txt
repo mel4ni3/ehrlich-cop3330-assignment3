@@ -1,0 +1,30 @@
+Word
+    string word
+    int freq
+
+App
+    printOutput(ArrayList<Word> allWords)
+        for int i from 0 to allWords.size -1
+            print allWords(i).freq
+            for int j from 0 to allWords(i).freq
+                print *
+        print \n
+
+    main
+        initialize inFile scanner
+        initialize allWords ArrayList<Word>
+        initialize str string to inFile.next
+        create newWord worth with word str and freq 1
+        add newWord to allWords
+
+        while inFile has next line
+            for int i from 0 to allWords.size
+                if allWords(i).word equals str
+                    add 1 to allWords(i).freq
+                    break
+                else
+                       set newWord to word str and freq 0
+                       add newWord to allWords
+    printOutput(allWords)
+    close inFile
+

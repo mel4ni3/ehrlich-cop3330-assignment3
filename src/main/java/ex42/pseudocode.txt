@@ -1,0 +1,27 @@
+Employee
+    Sting last
+    String first
+    int salary
+
+    Employee constructor takes in a last String, a first String, and a salary integer
+        set this employee's last
+        set this employee's first
+        set this employee's salary
+
+    printLine method
+        print the employee's last, first, and salary
+
+
+App
+    main
+        initialize inFile scanner
+        print output headers
+        for i equals 0 to i equals 7
+            initialize String line to the next line of inFile
+            initialize String array split as line separated by commas
+            initialize String last to split index 0
+            initialize String first to split index 1
+            initialize int salary to split index 2
+            Create a new Employee object with last, first, and salary
+            Call employee's printLine method
+

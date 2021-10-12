@@ -1,0 +1,30 @@
+App
+    createWebsite(String name, String author)
+        initialize html String
+        create website directory
+        create index.html file writer in website directory
+        initialize htmlString to replace title text with name
+        change htmlString to replace author text with author
+        print website directory was created
+        print html file was created
+    create JavaScript(name)
+        create js folder in directory
+        print directory was created
+    create CSS(name)
+        create css folder in directory
+        print directory was created
+    main
+        initialize Scanner input
+        prompt for site name
+        initialize String name to next line of input
+        prompt for site author
+        initialize String author to next line of input
+        prompt for JavaScript folder
+        initialize String js to next line of input
+        prompt for CSS folder
+        initialize String css to next line of input
+        createWebsite(name)
+        if js = y or Y
+            createJavaScript(name)
+        if css = y or Y
+            createCSS(name)

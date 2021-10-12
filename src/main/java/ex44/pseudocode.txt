@@ -1,0 +1,32 @@
+Product
+    ArrayList<ProductList> products
+
+ProductList
+    String name
+    Double price
+    Int quantity
+
+App
+    isProduct(String in, Product product)
+        for each ProductList i in Product.products
+            if in = i.name
+                return true
+        return false
+
+    checkProduct(String in, Product product)
+        for each ProductList i in Product.products
+            if in = i.name
+                print i.name, i.double, i.price
+
+    main
+        initialize JSONcontent string to path of input file
+        replace whitespace in JSONcontent with empty string
+        intialize product Product to a new Gson object of type fromJson using JSONcontent
+        initialize scanner s
+        Prompt for product name
+        initialize string in to next line of s
+        while isProduct(in, product) returns false
+            print that the product is not in the inventory
+            prompt for product name
+            in = next line of s
+        checkProduct(in, product)

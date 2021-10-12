@@ -1,0 +1,18 @@
+App
+    main
+        initialize name_count=0, i=0
+        initialize arraylist str
+        intitalize inFile scanner
+        intiialize outFile writer
+
+        while next line exists in inFile
+            add line to str
+            name_count = name_count + 1
+
+        sort str
+        close inFile
+
+        print total names to outFile
+        for i in count
+            print str at i to outFile
+        close outFile

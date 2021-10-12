@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App {
++{static}void main()
++{static}void createWebsite(String name, String author)
++{static}void createJavaScript(String name)
++{static}void createCSS(String name)
+Scanner input
+fileWriter site
+String name
+String author
+String js
+String css
+String html
+String htmlstring
+}
+
+
+@enduml

@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+@startuml
+'https://plantuml.com/class-diagram
+class Employee {
+String first
+String last
+Int salary
++void printLine()
+}
+
+class App {
++{static} void main()
+String line
+String[] split
+Scanner inFile
+Employee employee
+}
+
+App->Employee
+
+
+@enduml
